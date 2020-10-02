@@ -16,7 +16,8 @@ def custom_len(input_list):
 
     """
 
-    return len(input_list)
+
+    return
 
 
 # For the next four exercises, you'll need to be clever and think about ways
@@ -44,7 +45,7 @@ def custom_append(input_list, value):
 
     """
 
-    input_list.append(value)
+    
 
 
 def custom_extend(input_list, second_list):
@@ -63,7 +64,7 @@ def custom_extend(input_list, second_list):
 
     """
 
-    input_list.extend(second_list)
+    
 
 
 def custom_insert(input_list, index, value):
@@ -81,7 +82,7 @@ def custom_insert(input_list, index, value):
 
     """
 
-    input_list.insert(index, value)
+    
 
 
 def custom_remove(input_list, value):
@@ -100,7 +101,7 @@ def custom_remove(input_list, value):
 
     """
 
-    input_list.remove(value)
+    
 
 
 def custom_pop(input_list):
@@ -177,7 +178,7 @@ def custom_reverse(input_list):
 
     """
     
-    input_list[::-1]
+
 
 
 def custom_contains(input_list, value):
@@ -197,7 +198,7 @@ def custom_contains(input_list, value):
 
     """
     
-    value in input_list[:]
+
     
 
 
