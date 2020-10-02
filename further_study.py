@@ -16,7 +16,7 @@ def custom_len(input_list):
 
     """
 
-    return 0
+    return len(input_list)
 
 
 # For the next four exercises, you'll need to be clever and think about ways
@@ -44,7 +44,7 @@ def custom_append(input_list, value):
 
     """
 
-    pass
+    input_list.append(value)
 
 
 def custom_extend(input_list, second_list):
@@ -63,7 +63,7 @@ def custom_extend(input_list, second_list):
 
     """
 
-    pass
+    input_list.extend(second_list)
 
 
 def custom_insert(input_list, index, value):
@@ -81,7 +81,7 @@ def custom_insert(input_list, index, value):
 
     """
 
-    pass
+    input_list.insert(index, value)
 
 
 def custom_remove(input_list, value):
@@ -100,7 +100,7 @@ def custom_remove(input_list, value):
 
     """
 
-    pass
+    input_list.remove(value)
 
 
 def custom_pop(input_list):
@@ -118,8 +118,10 @@ def custom_pop(input_list):
         ['Jan', 'Feb']
 
     """
-
-    return None
+    
+    last_element = input_list[-1]
+    del input_list[-1]
+    return last_element
 
 
 def custom_index(input_list, value):
@@ -134,8 +136,10 @@ def custom_index(input_list, value):
         1
 
     """
+    for i in range(len(input_list)):
+        if value == input_list[i]:
+            return i
 
-    return 0
 
 
 def custom_count(input_list, value):
@@ -150,8 +154,11 @@ def custom_count(input_list, value):
         2
 
     """
-
-    return 0
+    count = 0
+    for item in input_list:
+        if item == value:
+            count = count + 1
+    return count 
 
 
 def custom_reverse(input_list):
@@ -169,8 +176,8 @@ def custom_reverse(input_list):
         True
 
     """
-
-    pass
+    
+    input_list[::-1]
 
 
 def custom_contains(input_list, value):
@@ -189,8 +196,9 @@ def custom_contains(input_list, value):
         True
 
     """
-
-    return None
+    
+    value in input_list[:]
+    
 
 
 def custom_equality(some_list, another_list):
